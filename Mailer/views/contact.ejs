@@ -5,13 +5,16 @@
 </head>
 <body>
     <div class="form-container">
+	 <label for="to" class="more">To send emails to multiple recipients comma ", " and space between emails</label>
+	 <br>
         <form method="post" action="/">
             <label for="to">From:</label>
 		
 			<input type="email" name="from" readonly value="<%=email%>">
 			<br>
             <label for="to">To:</label>
-            <input type="email" name="to" required>
+           
+            <input placeholder="" type="text" name="to" required>
 			<br>
 			
             <label for="subject">Subject:</label>
